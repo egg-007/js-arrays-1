@@ -190,7 +190,29 @@ console.log(newdata)
 console.log(data)
 }
 ///////////////////////////////////////////////////
-// TODO EX11
+function ex11(){
+    const array = []
+    const array2 = []
+    let indixOfSize = 0
+    for(let i = 0; i < data.length / 4; i++)
+    {
+        array[i] = data.slice(indixOfSize,indixOfSize + 4);
+        indixOfSize += 4 
+    }
+    let tmp = []
+    let h = 0
+    for(let t = 0; t < data.length; t++){
+        tmp[h] = data[t]
+        h++
+        if(h == 4){
+            array2.push(tmp)
+            tmp = []
+            h = 0
+        }
+    }
+    console.log(array)
+    console.log(array2)
+}
 //////////////////////////////////////////////////
 function ex12(){
     let max
@@ -218,4 +240,3 @@ function ex12(){
     console.log(moyenne)
     console.log(total)
 }
-ex12()
