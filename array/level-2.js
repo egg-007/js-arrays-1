@@ -4,7 +4,7 @@ const newdata1 = []
 
 function ex1 (){
     const reversedata = data.reverse()
-    for(let i = 0; i < data.length; i++)
+    for(let i = 0; i < data.length / 2; i++)
     {
         let swap = data[i]
         data[i] = data[data.length - 1 - i]
@@ -20,7 +20,7 @@ function ex2 (){
     {
         for(let j = 0; j < data.length; j++)
         {
-            if(data[i] > data[j]){
+            if(data[i] < data[j]){
                 let swap = data[i]
                 data[i] = data[j]
                 data[j] = swap
@@ -37,7 +37,7 @@ function ex3 (){
     {
         for(let j = 0; j < data.length; j++)
         {
-            if(data[i] < data[j]){
+            if(data[i] > data[j]){
                 let swap = data[i]
                 data[i] = data[j]
                 data[j] = swap
