@@ -84,7 +84,7 @@ function ex7 (){
     const reversedata = new Set(data)
     for(let i = 0; i < data.length; i++)
     {
-        if(data[i] != data[i - 1])
+        if(i == 0 || data[i] != data[i - 1])
             newdata.push(data[i])
     }
     console.log(newdata)
